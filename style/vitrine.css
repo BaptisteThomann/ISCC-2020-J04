@@ -1,13 +1,15 @@
 @font-face{
     font-family: "OpenSans";
-    src: url('..assetD04/Open_Sans/OpenSans-Regular.ttf');
-    font-size: 14px;
+    src: url('../Open_Sans/OpenSans-Regular.ttf');
+    font-size: 14px;   
+}
+@font-face{
     font-family: "nasalization";
-    src:url('../assetD04/Open_Sans/nasalization-rg.ttf');
+    src: url('../Open_Sans/nasalization-rg.ttf')
 }
 
 body{
-    color: #f2f2f2;
+    background-color: #f2f2f2;
     font-family : "Open_Sans";
 }
 
@@ -34,10 +36,10 @@ h1{
 
 nav{
     color: white;
-    display: inline-block;
+    display: inline-block 100%;
     background-color: #2e2f30;
-    padding-right: 50px;
-    margin: 0px;
+    padding-right:50px;
+    margin:0px;
     text-align: right;
     vertical-align: middle;
 }
@@ -46,13 +48,46 @@ nav{
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+}
+
 a:visited{
     color: white;
 }
-a.hover{
+a:hover{
     color: #17c1ff;
 }
 
 .imageep{
+    text-align:center;
+}
+
+h2{
+    text-transform: uppercase;
+    text-shadow: 2px 2px grey;
+    color: #e6e6e6
+}
+
+p{
     text-align: center;
+    width: 750px;
+    padding: 10px;
+}
+.picture1{
+    width: 50%;
+}
+
+.picture2{
+    width: 50%;
+}
+
+.picture{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.picturesize{
+    width: 80%;
 }
